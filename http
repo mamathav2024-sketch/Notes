@@ -1,0 +1,44 @@
+[ ] Confirm the endpoint
+   Verify hostname, path, API version, HTTP method and environment.
+[ ] Check network and DNS
+   Resolve the hostname and verify connectivity from the actual runner.
+[ ] Check TLS
+   Inspect certificate trust and hostname validation; do not disable verification as a workaround.
+[ ] Inspect HTTP status
+   Capture the status code separately from the response body.
+[ ] Validate authentication
+   Check token expiry, issuer, audience, scopes or roles, and tenant.
+[ ] Validate request format
+   Check Content-Type, Accept, JSON syntax, required fields and payload schema.
+[ ] Inspect service diagnostics
+   Capture correlation IDs, timestamps and safe error details.
+[ ] Check automation behavior
+   Verify exit codes, retry safety, timeouts, polling and business-level success.
+
+
+
+  Connectivity: Can the client reach the service?
+
+
+
+Authentication: Who is making the request?
+
+
+
+Authorization: Is that identity allowed to perform the operation?
+
+
+
+Request validity: Is the method, header and JSON payload correct?
+
+
+
+HTTP result: What status and response did the server return?
+
+
+
+Business result: Did the requested operation actually complete?
+
+
+
+Automation behavior: Did the pipeline interpret the outcome safely?
